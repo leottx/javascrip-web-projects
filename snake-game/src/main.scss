@@ -5,15 +5,18 @@
   padding: 0;
 }
 
-// html {
-//   font-size: 62.5%;
-// }
-
-body {
+// Game styles
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   min-height: 100vh;
+  & > *:not(:last-child) {
+    margin-bottom: 1.6rem;
+  }
 }
 
-// Game styles
 .grid {
   width: 200px;
   height: 200px;
@@ -28,10 +31,14 @@ body {
 }
 
 .snake {
-  border-radius: 50%;
   background-color: blue;
 }
 
 .apple {
   background-color: red;
+}
+
+.start {
+  font-size: 0.8rem;
+  padding: .6rem 1rem;
 }
