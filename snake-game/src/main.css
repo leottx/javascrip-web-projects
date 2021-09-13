@@ -5,8 +5,15 @@
   padding: 0;
 }
 
-body {
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   min-height: 100vh;
+}
+.container > *:not(:last-child) {
+  margin-bottom: 1.6rem;
 }
 
 .grid {
@@ -23,12 +30,16 @@ body {
 }
 
 .snake {
-  border-radius: 50%;
   background-color: blue;
 }
 
 .apple {
   background-color: red;
+}
+
+.start {
+  font-size: 0.8rem;
+  padding: 0.6rem 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */

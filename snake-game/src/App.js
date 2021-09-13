@@ -20,9 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
     squares[appleIndex].classList.remove('apple');
     clearInterval(interval);
     score = 0; // Zerando o score
-    //randomApple();
+    randomApple();
     direction = 1; // Reiniciando a direção da cobrinha
-    scoreDisplay.innerText = score; // Reiniciando o display da cobrinha
+    scoreDisplay.innerText = `Score: ${score}`; // Reiniciando o display da cobrinha
     intervalTime = 1000; // 
     currentSnake = [2,1,0]; // Reiniciando a posição inicial da cobrinha
     currentIndex = 0; //
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
       currentSnake.push(tail)
       randomApple();
       score++;
-      scoreDisplay.innerText = score;
+      scoreDisplay.innerText = `Score: ${score}`; 
       clearInterval(interval);
       intervalTime *= speed;
       interval = setInterval(moveOutcomes, intervalTime);
@@ -71,9 +71,9 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (e.key === 'ArrowTop' || e.keyCode === 38) {
       direction = -width; // Se pressionar o direcional de cima ou a letra W, a cobra andará para cima
     } else if (e.key === 'ArrowLeft' || e.keyCode === 37) {
-      direction = -1; // Se pressionar o direcional da esquerda ou a letra A, a cobra andará para cima
+      direction = -1; // Se pressionar o direcional da esquerda ou a letra A, a cobra andará para esquerda
     } else if (e.key === 'ArrowDown' || e.keyCode === 40) {
-      direction = +width; // Se pressionar o direcional de baixo ou a letra S, a cobra andará para cima
+      direction = +width; // Se pressionar o direcional de baixo ou a letra S, a cobra andará para baixo
     }
   }
 
