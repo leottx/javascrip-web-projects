@@ -1,0 +1,23 @@
+{
+  "name": "javascript-web-projects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "sass --watch ./main.scss ./main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leottx/javascrip-web-projects.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leottx/javascrip-web-projects/issues"
+  },
+  "homepage": "https://github.com/leottx/javascrip-web-projects#readme",
+  "devDependencies": {
+    "sass": "^1.39.2"
+  }
+}
