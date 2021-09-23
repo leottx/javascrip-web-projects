@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+}
+
+.container {
+  text-align: center;
+  h1 {
+    margin-bottom: 3rem;
+  }
+  p {
+    margin-bottom: 3rem;
+  }
+  button {
+    padding: .6rem 1rem;
+  } 
+}
+
+.board {
+  display: table;
+  border-collapse: collapse;
+  margin-bottom: 3.6rem;
+  .column {
+    display: table-row;
+  }
+  .cell {
+    width: 120px;
+    display: table-cell;
+    height: 120px;
+    border: 3px solid black;
+    vertical-align: middle;
+  }
+}

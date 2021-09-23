@@ -1,0 +1,26 @@
+{
+  "name": "javascript-web-projects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch ./src/main.scss ./src/main.css",
+    "serve": "live-server ./src --port=8080 --open",
+    "start": "npm run watch & npm run serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leottx/javascrip-web-projects.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leottx/javascrip-web-projects/issues"
+  },
+  "homepage": "https://github.com/leottx/javascrip-web-projects#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "sass": "^1.42.1"
+  }
+}
