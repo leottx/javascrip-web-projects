@@ -1,0 +1,18 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch ./src/main.scss ./src/main.css",
+    "serve": "live-server ./src --port=8080 --open",
+    "start": "npm run watch & npm run serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "sass": "^1.42.1"
+  }
+}
