@@ -1,4 +1,4 @@
-#Quote Generator
+# Quote Generator
 
 ### Sobre
 Esta aplicação trata-se de um gerador de frases aleatórias. A ideia partiu de um dos módulos do curso [JavaScript Web Projects](https://www.udemy.com/course/javascript-web-projects-to-build-your-portfolio-resume/) da ZTM Academy.
